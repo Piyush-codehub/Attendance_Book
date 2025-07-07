@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Attendance App</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="login-box">
+      <h2 class="login-title">Login</h2>
+
+      <form id="login-form">
+        <input class="input-box" type="text" id="login-username" placeholder="Username" required />
+        <input class="input-box" type="password" id="login-password" placeholder="Password" required />
+        <div class="remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember me.</label>
+        </div>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+
+      <p class="register-link">Don't have an account? <a href="register.html">Register here</a></p>
+
+      <a href="#" class="terms-link">Terms & Conditions.</a>
+    </div>
+  </div>
+
+  <!-- <script>
+    // Just for demo: Save login credentials (username + password)
+    localStorage.setItem("username", "kabir");
+    localStorage.setItem("password", "1234");
+  </script>
+  <script>
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const inputUsername = document.getElementById("login-username").value;
+      const inputPassword = document.getElementById("login-password").value;
+
+      const savedUsername = localStorage.getItem("username");
+      const savedPassword = localStorage.getItem("password");
+
+      if (inputUsername === savedUsername && inputPassword === savedPassword) {
+        // ✅ Set login session
+        localStorage.setItem("isLoggedIn", "true");
+
+        // ✅ Set first-time login flag
+        localStorage.setItem("isFirstLogin", "true");
+
+        alert("Login successful!");
+        window.location.href = "Dashboard.html"; // or wherever you go after login
+      } else {
+        alert("Invalid credentials");
+      }
+    });
+  </script> -->
+
+  <script src="js/login.js"></script>
+
+</body>
+
+</html>
